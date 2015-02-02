@@ -1,0 +1,1 @@
+function toggleNav(){"slide-closed"==$(".site-wrapper").attr("data-state")?$(".site-wrapper").attr("data-state","slide-open"):$(".site-wrapper").attr("data-state","slide-closed")}$(function(){$("body").removeClass("noscript"),$(".toggle-btn, .close-btn").click(function(){toggleNav()})});
