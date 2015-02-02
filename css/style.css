@@ -91,29 +91,32 @@ body {
     display: none; }
 
 /* line 31, /Users/ariahboots/Desktop/Year Three/Web Development V/exercise-4-menu/scss/components/main */
+h1 {
+  position: absolute; }
+
+/* line 35, /Users/ariahboots/Desktop/Year Three/Web Development V/exercise-4-menu/scss/components/main */
 main {
   height: 100vh;
   background-color: #2292a7; }
 
-/* line 36, /Users/ariahboots/Desktop/Year Three/Web Development V/exercise-4-menu/scss/components/main */
+/* line 40, /Users/ariahboots/Desktop/Year Three/Web Development V/exercise-4-menu/scss/components/main */
 header {
-  padding: 0 1em;
-  position: relative; }
+  padding: 0 1em; }
 
-/* line 41, /Users/ariahboots/Desktop/Year Three/Web Development V/exercise-4-menu/scss/components/main */
+/* line 44, /Users/ariahboots/Desktop/Year Three/Web Development V/exercise-4-menu/scss/components/main */
 .toggle-btn {
   position: absolute;
   right: 1em;
   top: 0; }
 
-/* line 47, /Users/ariahboots/Desktop/Year Three/Web Development V/exercise-4-menu/scss/components/main */
+/* line 50, /Users/ariahboots/Desktop/Year Three/Web Development V/exercise-4-menu/scss/components/main */
 .navigation ul {
   margin: 0;
   padding: 0; }
-  /* line 49, /Users/ariahboots/Desktop/Year Three/Web Development V/exercise-4-menu/scss/components/main */
+  /* line 52, /Users/ariahboots/Desktop/Year Three/Web Development V/exercise-4-menu/scss/components/main */
   .navigation ul li {
     list-style-type: none; }
-    /* line 54, /Users/ariahboots/Desktop/Year Three/Web Development V/exercise-4-menu/scss/components/main */
+    /* line 57, /Users/ariahboots/Desktop/Year Three/Web Development V/exercise-4-menu/scss/components/main */
     .navigation ul li a {
       display: block;
       padding: 0.5em 1em;
@@ -121,41 +124,45 @@ header {
       text-decoration: none;
       font-family: 'Open Sans' sans-serif;
       text-transform: uppercase;
-      color: #4b4a4a; }
+      color: #4b4a4a;
+      letter-spacing: 0.15em; }
 
-/* line 69, /Users/ariahboots/Desktop/Year Three/Web Development V/exercise-4-menu/scss/components/main */
-.navigation ul a:hover, .navigation ul a:focus, .navigation ul a:active {
-  background-color: rgba(34, 146, 167, 0.67); }
-
-/* line 75, /Users/ariahboots/Desktop/Year Three/Web Development V/exercise-4-menu/scss/components/main */
+/* line 73, /Users/ariahboots/Desktop/Year Three/Web Development V/exercise-4-menu/scss/components/main */
 .toggle-btn, .close-btn {
   color: #4b4a4a;
+  margin: 2em 0;
   height: 40px;
   width: 40px; }
-  /* line 79, /Users/ariahboots/Desktop/Year Three/Web Development V/exercise-4-menu/scss/components/main */
+  /* line 78, /Users/ariahboots/Desktop/Year Three/Web Development V/exercise-4-menu/scss/components/main */
   .toggle-btn span, .close-btn span {
     text-indent: 100%;
     white-space: nowrap;
     overflow: hidden;
     display: block; }
-  /* line 82, /Users/ariahboots/Desktop/Year Three/Web Development V/exercise-4-menu/scss/components/main */
+  /* line 81, /Users/ariahboots/Desktop/Year Three/Web Development V/exercise-4-menu/scss/components/main */
   .toggle-btn i, .close-btn i {
     border: 1px solid #ccc;
     padding: 0.5em 0.5em 0.5em;
     border-radius: 2px; }
 
-/* line 89, /Users/ariahboots/Desktop/Year Three/Web Development V/exercise-4-menu/scss/components/main */
+/* line 88, /Users/ariahboots/Desktop/Year Three/Web Development V/exercise-4-menu/scss/components/main */
 .close-btn {
-  margin: 1em; }
+  margin: 2em;
+  position: absolute; }
+
+/* line 93, /Users/ariahboots/Desktop/Year Three/Web Development V/exercise-4-menu/scss/components/main */
+.navigation ul {
+  margin-top: 0.25em;
+  margin-left: 1em; }
 
 @media only screen and (max-width: 60em) {
-  /* line 94, /Users/ariahboots/Desktop/Year Three/Web Development V/exercise-4-menu/scss/components/main */
+  /* line 100, /Users/ariahboots/Desktop/Year Three/Web Development V/exercise-4-menu/scss/components/main */
   .site-wrapper {
     position: relative;
     overflow: hidden;
     width: 100%;
     z-index: 100; }
-    /* line 99, /Users/ariahboots/Desktop/Year Three/Web Development V/exercise-4-menu/scss/components/main */
+    /* line 105, /Users/ariahboots/Desktop/Year Three/Web Development V/exercise-4-menu/scss/components/main */
     .site-wrapper .sliding-canvas {
       width: 100%;
       height: 100%;
@@ -164,16 +171,16 @@ header {
           -ms-transform: translateX(0);
               transform: translateX(0);
       transition: all 300ms ease-in-out; }
-    /* line 107, /Users/ariahboots/Desktop/Year Three/Web Development V/exercise-4-menu/scss/components/main */
+    /* line 113, /Users/ariahboots/Desktop/Year Three/Web Development V/exercise-4-menu/scss/components/main */
     .site-wrapper[data-state="slide-open"] .sliding-canvas {
       -webkit-transform: translateX(-100%);
           -ms-transform: translateX(-100%);
               transform: translateX(-100%); }
-    /* line 111, /Users/ariahboots/Desktop/Year Three/Web Development V/exercise-4-menu/scss/components/main */
+    /* line 117, /Users/ariahboots/Desktop/Year Three/Web Development V/exercise-4-menu/scss/components/main */
     .site-wrapper[data-state="slide-open"] {
       overflow: visible; }
 
-  /* line 119, /Users/ariahboots/Desktop/Year Three/Web Development V/exercise-4-menu/scss/components/main */
+  /* line 125, /Users/ariahboots/Desktop/Year Three/Web Development V/exercise-4-menu/scss/components/main */
   .slide-menu {
     position: absolute;
     width: 100%;
@@ -184,24 +191,29 @@ header {
  }
 
 @media only screen and (min-width: 60em) {
-  /* line 133, /Users/ariahboots/Desktop/Year Three/Web Development V/exercise-4-menu/scss/components/main */
+  /* line 139, /Users/ariahboots/Desktop/Year Three/Web Development V/exercise-4-menu/scss/components/main */
   .toggle-btn, .close-btn {
     display: none; }
  }
 
-/* line 138, /Users/ariahboots/Desktop/Year Three/Web Development V/exercise-4-menu/scss/components/main */
+/* line 144, /Users/ariahboots/Desktop/Year Three/Web Development V/exercise-4-menu/scss/components/main */
 body.noscript .slide-menu {
   position: static;
   right: auto; }
 
 @media only screen and (min-width: 60em) {
-  /* line 146, /Users/ariahboots/Desktop/Year Three/Web Development V/exercise-4-menu/scss/components/main */
+  /* line 152, /Users/ariahboots/Desktop/Year Three/Web Development V/exercise-4-menu/scss/components/main */
   .navigation ul {
-    float: right; }
+    float: right;
+    padding: 1.75em 0; }
 
-  /* line 150, /Users/ariahboots/Desktop/Year Three/Web Development V/exercise-4-menu/scss/components/main */
+  /* line 157, /Users/ariahboots/Desktop/Year Three/Web Development V/exercise-4-menu/scss/components/main */
   li {
     display: inline-block;
     text-transform: uppercase;
-    padding-right: 1em; }
+    padding-right: 0.5em; }
+
+  /* line 163, /Users/ariahboots/Desktop/Year Three/Web Development V/exercise-4-menu/scss/components/main */
+  .navigation ul a:hover {
+    border-bottom: 4px solid rgba(253, 242, 242, 0.61); }
  }

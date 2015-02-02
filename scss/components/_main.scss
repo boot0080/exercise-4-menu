@@ -28,14 +28,17 @@ body{
   }
 }
 
+h1 {
+ position: absolute;   
+}
+
 main {
- height: 100vh;
- background-color: $bg-color;   
+ height: 100vh; 
+ background-color: $bg-color;
 }
 
 header {
   padding: 0 1em;
-  position: relative;
 }
 
 .toggle-btn{
@@ -59,21 +62,17 @@ header {
     font-family: $open-sans;
     text-transform: uppercase;
     color: $text-color;
+    letter-spacing: .15em;
   }
  
   }
 }
 
-.navigation ul a:hover,
-.navigation ul a:focus,
-.navigation ul a:active{
-        background-color: $hover-color;
-        
-    }
       
 .toggle-btn,
-.close-btn{
+.close-btn {
  color: $text-color;
+    margin: 2em 0;
   height: 40px;
   width: 40px;
     span{
@@ -87,7 +86,14 @@ header {
 }
 
 .close-btn{
-  margin: 1em;
+  margin: 2em;
+    position: absolute;
+}
+
+.navigation ul {
+    margin-top: .25em;
+    margin-left: 1em;
+    
 }
 
 @media only screen and (max-width: 60em){
@@ -144,13 +150,18 @@ body.noscript .slide-menu{
 @media only screen and (min-width: 60em){
   
     .navigation ul{
-        float: right;   
+        float: right; 
+        padding: 1.75em 0;
     }
     
     li {
         display: inline-block;
         text-transform: uppercase;
-        padding-right: 1em;
+        padding-right: .5em;
+    }
+    
+    .navigation ul a:hover {
+        border-bottom: 4px solid rgba(253, 242, 242, 0.61);    
     }
 }
     
